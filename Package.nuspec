@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Package</id>
+    <version>1.0.0</version>
+    <authors>Alex</authors>
+    <owners>Alex</owners>
+    <licenseUrl>https://github.com/alindgren/UmbracoIdentity.AzureLoginStore/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/alindgren/UmbracoIdentity.AzureLoginStore</projectUrl>
+    <iconUrl></iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Azure Table Storage External Login Store for ASP.NET Identity for Umbraco</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>Umbraco Identity</tags>
+    <dependencies>
+      <dependency id="SampleDependency" version="1.0" />
+    </dependencies>
+  </metadata>
+</package>
