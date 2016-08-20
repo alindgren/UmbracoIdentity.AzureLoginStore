@@ -17,4 +17,7 @@
       <dependency id="UmbracoIdentity" version="4.0.0" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="..\AzureStorageTableExternalLoginStore\bin\Release\UmbracoIdentity.AzureLoginStore.dll" target="" />
+  </files>
 </package>

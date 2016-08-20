@@ -1,4 +1,4 @@
-$root = (split-path -parent $MyInvocation.MyCommand.Definition) + '\..\..'
+$root = (split-path -parent $MyInvocation.MyCommand.Definition) + '\..'
 
 Write-Host "test $root"
 
@@ -12,4 +12,4 @@ $content = $content -replace '\$version\$',$versionStr
 
 $content | Out-File $root\build\UmbracoIdentity.AzureLoginStore.compiled.nuspec
 
-& $root\build\tools\NuGet.exe pack $root\build\UmbracoIdentity.AzureLoginStore.compiled.nuspec
+& $root\build\NuGet.exe pack $root\build\UmbracoIdentity.AzureLoginStore.compiled.nuspec
