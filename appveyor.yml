@@ -30,13 +30,12 @@ deploy:
     secure: Ch+m53TO3H7V3zKq9WnIGjIh6r+VBkblVsulyuwmOsBC9dazfZnFgYPM0XQNy22L
   symbol_server: https://www.myget.org/F/alexlindgren/symbols/api/v2/package
   on:
-    branch: master
+    branch: develop
 - provider: NuGet
   api_key:
     secure: f2SKgprrXxQ8sKI2IMxBSYvEcsrDHiGAJ9yUAnUT316QvghSvDmQORTHYgVaKu80
   on:
-    branch: release
-    APPVEYOR_REPO_TAG: true
+    branch: master
 notifications:
 - provider: Email
   to:
