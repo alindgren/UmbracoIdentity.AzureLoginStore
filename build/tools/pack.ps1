@@ -1,4 +1,7 @@
-$root = (split-path -parent $MyInvocation.MyCommand.Definition) + '\..'
+$root = (split-path -parent $MyInvocation.MyCommand.Definition) + '\..\..'
+
+Write-Host "test $root"
+
 $version = [System.Reflection.Assembly]::LoadFile("$root\AzureStorageTableExternalLoginStore\bin\Release\UmbracoIdentity.AzureLoginStore.dll").GetName().Version
 $versionStr = "{0}.{1}.{2}" -f ($version.Major, $version.Minor, $version.Build)
 
@@ -9,4 +12,4 @@ $content = $content -replace '\$version\$',$versionStr
 
 $content | Out-File $root\build\UmbracoIdentity.AzureLoginStore.compiled.nuspec
 
-& $root\build\NuGet.exe pack $root\build\UmbracoIdentity.AzureLoginStore.compiled.nuspec
+& $root\build\tools\NuGet.exe pack $root\build\UmbracoIdentity.AzureLoginStore.compiled.nuspec
