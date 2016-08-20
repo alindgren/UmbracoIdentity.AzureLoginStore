@@ -9,4 +9,4 @@ $content = $content -replace '\$version\$',$versionStr
 
 $content | Out-File $root\build\UmbracoIdentity.AzureLoginStore.compiled.nuspec
 
-& $root\NuGet\NuGet.exe pack $root\build\UmbracoIdentity.AzureLoginStore.compiled.nuspec
+& $root\build\NuGet.exe pack $root\build\UmbracoIdentity.AzureLoginStore.compiled.nuspec
