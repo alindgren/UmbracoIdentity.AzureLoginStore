@@ -12,9 +12,10 @@
     <description>An external login store for ASP.NET Identity for Umbraco.</description>
     <releaseNotes></releaseNotes>
     <copyright>Copyright 2016</copyright>
-    <tags>Umbraco Identity</tags>
+    <tags>umbraco identity</tags>
     <dependencies>
       <dependency id="UmbracoIdentity" version="4.0.0" />
+      <dependency id="WindowsAzure.Storage" version="6.2.0" />
     </dependencies>
   </metadata>
   <files>
